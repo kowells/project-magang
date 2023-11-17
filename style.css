@@ -1,0 +1,393 @@
+body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+
+}
+
+
+
+/* login page */
+
+.global-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 400px;
+    /* Menetapkan lebar maksimum */
+    width: 100%;
+    /* Menyesuaikan lebar dengan lebar maksimum */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    display: block;
+    /* Mengubah menjadi blok agar mengambil lebar maksimum */
+    width: 100%;
+    /* Mengambil lebar maksimum */
+    padding: 10px 0;
+    /* Menghapus padding horizontal */
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url("../pjmagang/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+/* dashboard page */
+
+.dashboard {
+    margin-top: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-message {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+/* sidebar  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #CCE0E3;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid azure;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+}
+
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 250px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: -250px;
+}
+
+#check:checked~label #btn {
+    left: 40px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+/* list page */
+
+.list {
+    margin-top: 89px;
+    padding-top: 20px;
+}
+
+.data-pengunjung {
+    margin-left: 300px;
+    margin-right: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.list-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.table-dark th {
+    background-color: #333;
+    color: #fff;
+}
+
+th[rowspan="2"] {
+    vertical-align: middle;
+}
+
+th[colspan="2"],
+td[colspan="2"] {
+    border-right: none;
+}
+
+th[colspan="2"] {
+    font-weight: normal;
+}
+
+th[colspan="2"]:last-child,
+td[colspan="2"]:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.btn-filter {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.btn-edit {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #102741;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* cursor: pointer; */
+}
+
+.btn-delete {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* cursor: pointer; */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
+
+/* form page */
+
+.form {
+    max-width: 600px;
+    margin-left: 300px;
+    margin-top: 89px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-form {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}

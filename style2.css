@@ -1,0 +1,68 @@
+/* styling page ruangan.php */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.ruangan {
+    margin-top: 89px;
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-ruang {
+    margin-left: 280px;
+    margin-right: 200px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 5px;
+}
+
+.btn-ruang h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.btn-ruang h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.gab-btn {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .btn-ruang {
+        /* margin: 20px; */
+
+    }
+
+    .btn-ruang h2 {
+        font-size: 20px;
+    }
+
+    .btn-ruang h4 {
+        font-size: 16px;
+    }
+}
